@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react';
-import { Navbar, Jumbotron, Grid, Col } from 'react-bootstrap';
+import React, { PureComponent, Fragment } from 'react';
+import { Navbar, Jumbotron, Grid, Col, Image } from 'react-bootstrap';
+import Section from './Section';
 import Header from "./Header";
 
 
-class App extends Component {
+class App extends PureComponent {
   render() {
     return(
       <Fragment>
@@ -13,21 +14,19 @@ class App extends Component {
               <Jumbotron>
                   <h1>Titre</h1>
               </Jumbotron>
-               {/* Créer composant réutilisable */}
-              <section className="well">
-                  <Grid fluid>
-                      <Col md={8}>
-                          <h2>Titre h2</h2>
-                          <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
-                          </p>
-                      </Col>
-                      <Col md={4}>
-                          <img alt="" src="https://placehold.it/512x512" />
-                      </Col>
-                  </Grid>
-              </section>
-          </Grid>
+
+            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
+            </Section>
+
+            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
+            </Section>
+
+            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
+            </Section>
+        </Grid>
       </Fragment>
     );
   }
