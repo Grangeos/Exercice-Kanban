@@ -3,6 +3,8 @@ import { Navbar, Jumbotron, Grid, Col, Image } from 'react-bootstrap';
 import Section from './Section';
 import Header from "./Header";
 import Introduction from "./Introduction";
+import Fonctionnement from "./Fonctionnement";
+
 
 
 class App extends PureComponent {
@@ -15,13 +17,9 @@ class App extends PureComponent {
               <Jumbotron>
                   <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
-
               <Introduction/>
 
-            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
-            </Section>
-
+              <Fonctionnement/>
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
             </Section>
