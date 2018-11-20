@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: Abelone;
+  src: url('../fonts/Abelone.otf');
+}
+
+.abelone {
+  font-family: Abelone, sans-serif;
+}
