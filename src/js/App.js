@@ -27,6 +27,12 @@ class App extends PureComponent {
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
             </Section>
+            <Section title="Conclusion de Kanban" imageAlt="" imageSrc="https://placehold.it/512x512">
+            La méthode Kanban est utilisée en grande majorité dans le secteur de la production industrielle. Avec cette méthodologie, ce sont les commandes des clients qui déclenchent la production… <br />
+            Le but étant d'éviter au maximum d'avoir du stock <br />
+            Cette approche permet de favoriser la collaboration pour résoudre les problèmes.
+
+            </Section>
             <Avantages />
 
         </Grid>
