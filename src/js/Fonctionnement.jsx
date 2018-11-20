@@ -5,7 +5,7 @@ import Section from "./Section";
 class Fonctionnement extends PureComponent {
   render() {
     return(
-      <Section title="Fonctionnement de Kanban" imageAlt="" imageSrc={imgFonctionnement}>
+      <Section id="fonctionnement" title="Fonctionnement de Kanban" imageAlt="" imageSrc={imgFonctionnement}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis,
           dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo
           sapiente eligendi aspernatur!
