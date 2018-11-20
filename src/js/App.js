@@ -12,7 +12,7 @@ class App extends PureComponent {
           {/* Move to FindAProperName.jsx */}
           <Grid>
               <Jumbotron>
-                  <h1>Titre</h1>
+                  <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
 
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
