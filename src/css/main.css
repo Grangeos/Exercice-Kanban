@@ -1,6 +1,6 @@
-.navbar-nav {
-  display: flex;
-  justify-content: center;
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
 }
 
 p {
