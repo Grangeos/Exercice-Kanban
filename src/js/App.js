@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
 import Introduction from "./Introduction";
+import Fonctionnement from "./Fonctionnement";
 import Avantages from './Avantages';
 import Conclu from "../Img/conclu.png"
 class App extends PureComponent {
@@ -17,13 +18,9 @@ class App extends PureComponent {
               <Jumbotron>
                   <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
-
               <Introduction/>
 
-            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
-            </Section>
-
+              <Fonctionnement/>
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
             </Section>
