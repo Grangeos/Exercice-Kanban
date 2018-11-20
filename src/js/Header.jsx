@@ -9,6 +9,7 @@ class Header extends Component {
               <Navbar.Brand>
                 <a href="#">Kanban</a>
               </Navbar.Brand>
+              <Navbar.Toggle />
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav pullRight>
