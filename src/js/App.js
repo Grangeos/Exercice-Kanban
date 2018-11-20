@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
 import Introduction from "./Introduction";
+import Avantages from './Avantages';
 
 class App extends PureComponent {
   render() {
@@ -26,6 +27,8 @@ class App extends PureComponent {
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
             </Section>
+            <Avantages />
+
         </Grid>
         <Slider slides={[
             {
