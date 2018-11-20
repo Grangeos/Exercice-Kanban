@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Jumbotron, Grid, Well } from 'react-bootstrap';
 import Section from './Section';
+import Principes from "./Principe";
 import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
@@ -8,6 +9,7 @@ import Introduction from "./Introduction";
 import Fonctionnement from "./Fonctionnement";
 import Avantages from './Avantages';
 import Conclu from "../Img/conclu.png"
+
 class App extends PureComponent {
   render() {
     return(
@@ -19,7 +21,22 @@ class App extends PureComponent {
                   <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
               <Introduction/>
+              <Principes/>
               <Fonctionnement/>
+              <Slider slides={[
+                  {
+                      title: 'Première slide',
+                      description: 'Description...',
+                      imageSrc: 'https://placehold.it/1024x512',
+                      imageAlt: '',
+                  },
+                  {
+                      title: 'Deuxième slide',
+                      description: 'Description...',
+                      imageSrc: 'https://placehold.it/1024x512',
+                      imageAlt: '',
+                  }
+              ]} />
                 <Well>
                   <h2 className="text-center"> Les 4 principaux principes de la methode Kanban</h2>
                   <Slider slides={[
