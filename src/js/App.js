@@ -5,13 +5,8 @@ import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
 import Introduction from "./Introduction";
-<<<<<<< HEAD
 import Fonctionnement from "./Fonctionnement";
-
-
-=======
 import Avantages from './Avantages';
->>>>>>> 6ccd0b58db98c5a85d4ad363d5aa2b8099f35002
 
 class App extends PureComponent {
   render() {
