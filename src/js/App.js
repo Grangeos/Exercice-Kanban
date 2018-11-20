@@ -6,7 +6,7 @@ import Footer from './Footer';
 import Slider from './Slider';
 import Introduction from "./Introduction";
 import Avantages from './Avantages';
-
+import Conclu from "../Img/conclu.png"
 class App extends PureComponent {
   render() {
     return(
@@ -27,8 +27,14 @@ class App extends PureComponent {
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
             </Section>
-            <Avantages />
 
+            <Avantages />
+            <Section title="Conclusion de Kanban">
+            La méthode Kanban est utilisée en grande majorité dans le secteur de la production industrielle. Avec cette méthodologie, ce sont les commandes des clients qui déclenchent la production… <br />
+            Le but étant d'éviter au maximum d'avoir du stock <br />
+            Cette approche permet de favoriser la collaboration pour résoudre les problèmes.
+
+            </Section>
         </Grid>
         <Slider slides={[
             {
