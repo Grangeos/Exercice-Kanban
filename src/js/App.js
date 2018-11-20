@@ -1,6 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Jumbotron, Grid, } from 'react-bootstrap';
 import Section from './Section';
+import Principes from "./Principe";
 import Header from './Header';
 import Footer from './Footer';
 import Slider from './Slider';
@@ -8,6 +9,7 @@ import Introduction from "./Introduction";
 import Fonctionnement from "./Fonctionnement";
 import Avantages from './Avantages';
 import Conclu from "../Img/conclu.png"
+
 class App extends PureComponent {
   render() {
     return(
@@ -19,6 +21,7 @@ class App extends PureComponent {
                   <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
               <Introduction/>
+              <Principes/>
 
               <Fonctionnement/>
             <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
@@ -33,6 +36,7 @@ class App extends PureComponent {
 
             </Section>
         </Grid>
+
         <Slider slides={[
             {
                 title: 'Première slide',
