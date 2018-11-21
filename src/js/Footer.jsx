@@ -8,7 +8,7 @@ class Footer extends Component {
         <Grid fluid>
           <Row className="show-grid">
             <Col xs={6}>
-              <p>Made by EdenSchool</p>
+              <p>Made by Alexis / Mathias / Adrien / Raphael / Kyllian</p>
             </Col>
             <Col xs={6}>
               <p className="text-right"><a href="https://www.edenschool.fr/" target="_blank" >EDEN SCHOOL</a></p>
