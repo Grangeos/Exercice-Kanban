@@ -8,8 +8,6 @@ class Slider extends PureComponent {
             PropTypes.shape({
                 title: PropTypes.string,
                 description: PropTypes.string,
-                imageSrc: PropTypes.string,
-                imageAlt: PropTypes.string,
             })
         ).isRequired,
     }
@@ -18,15 +16,15 @@ class Slider extends PureComponent {
         const { slides } = this.props;
 
         return (
-            <Carousel>
+            <Carousel style={{ backgroundImage: "none"}}>
                 {
-                    slides.map(({ title, description, imageAlt, imageSrc }, idx) => (
+                    slides.map(({ title, description }, idx) => (
                         <Carousel.Item key={idx}>
-                            <Image alt={imageAlt} src={imageSrc} />
-                            <Carousel.Caption>
-                                <h3>{title}</h3>
-                                <p>{description}</p>
-                            </Carousel.Caption>
+                            <div style={{height:'300px', display: 'flex', justifyContent:'center', alignItems:'center', flexDirection: 'column'}}>
+                              <h3>{title}</h3>
+                              <p>{description}</p>
+
+                            </div>
                         </Carousel.Item>
                     ))
                 }
