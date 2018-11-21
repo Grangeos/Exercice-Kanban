@@ -1,6 +1,21 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavItem, Jumbotron, Grid, Col, Row } from 'react-bootstrap';
 
+function smoothScrollTo(anchor) {
+  const el = document.querySelector(anchor);
+  try {
+    el.scrollIntoView({ behavior: 'smooth' });
+  } catch (e) {
+    el.scrollIntoView(true);
+  }
+}
+
+const AnchorItem = ({ children, href, ...props }) => (
+  <NavItem href={href} {...props} onClick={() => smoothScrollTo(href)}>
+    {children}
+  </NavItem>
+)
+
 class Header extends Component {
   render() {
     return(
@@ -13,24 +28,24 @@ class Header extends Component {
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav pullRight>
-                <NavItem>
+                <AnchorItem href="#introduction">
                   Introduction
-                </NavItem>
-                <NavItem>
+                </AnchorItem>
+                <AnchorItem href="#principes">
                   Principes
-                </NavItem>
-                <NavItem>
+                </AnchorItem>
+                <AnchorItem href="#fonctionnement">
                   Fonctionnement
-                </NavItem>
-                <NavItem>
+                </AnchorItem>
+                <AnchorItem href="#principes-kanban">
                   4 principes Kanban
-                </NavItem>
-                <NavItem>
+                </AnchorItem>
+                <AnchorItem href="#avantages-incovenients">
                   Avantages/Inconvenients
-                </NavItem>
-                <NavItem>
+                </AnchorItem>
+                <AnchorItem href="#conclusion">
                   Conclusion
-                </NavItem>
+                </AnchorItem>
               </Nav>
             </Navbar.Collapse>
       </Navbar>
