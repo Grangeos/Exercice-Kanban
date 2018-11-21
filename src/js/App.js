@@ -8,7 +8,6 @@ import Slider from './Slider';
 import Introduction from "./Introduction";
 import Fonctionnement from "./Fonctionnement";
 import Avantages from './Avantages';
-import Conclu from "../Img/conclu.png"
 
 class App extends PureComponent {
   render() {
@@ -20,11 +19,11 @@ class App extends PureComponent {
               <Jumbotron>
                   <h1 className="abelone text-center">Kanban</h1>
               </Jumbotron>
-              <Introduction/>
-              <Principes/>
-              <Fonctionnement/>
-                <Well>
-                  <h2 className="text-center"> Les 4 principaux principes de la methode Kanban</h2>
+              <Introduction id="introduction" />
+              <Principes id="principes" />
+              <Fonctionnement id="fonctionnement" />
+              <Well id="principes-kanban">
+                <h2 className="text-center"> Les 4 principaux principes de la methode Kanban</h2>
                   <Slider slides={[
                       {
                           title: 'Commencez par ce que vous faites aujourd’hui :',
@@ -44,11 +43,11 @@ class App extends PureComponent {
                       }
                   ]} />
                 </Well>
-            <Avantages />
-            <Section title="Conclusion de Kanban">
-            La méthode Kanban est utilisée en grande majorité dans le secteur de la production industrielle. Avec cette méthodologie, ce sont les commandes des clients qui déclenchent la production… <br />
-            Le but étant d'éviter au maximum d'avoir du stock <br />
-            Cette approche permet de favoriser la collaboration pour résoudre les problèmes.
+            <Avantages id="avantages-inconvenients" />
+            <Section id="conclusion" title="Conclusion de Kanban">
+                La méthode Kanban est utilisée en grande majorité dans le secteur de la production industrielle. Avec cette méthodologie, ce sont les commandes des clients qui déclenchent la production… <br />
+                Le but étant d'éviter au maximum d'avoir du stock <br />
+                Cette approche permet de favoriser la collaboration pour résoudre les problèmes.
             </Section>
           </Grid>
         <Footer />

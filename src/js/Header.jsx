@@ -40,7 +40,7 @@ class Header extends Component {
                 <AnchorItem href="#principes-kanban">
                   4 principes Kanban
                 </AnchorItem>
-                <AnchorItem href="#avantages-incovenients">
+                <AnchorItem href="#avantages-inconvenients">
                   Avantages/Inconvenients
                 </AnchorItem>
                 <AnchorItem href="#conclusion">
