@@ -23,20 +23,6 @@ class App extends PureComponent {
               <Introduction/>
               <Principes/>
               <Fonctionnement/>
-              <Slider slides={[
-                  {
-                      title: 'Première slide',
-                      description: 'Description...',
-                      imageSrc: 'https://placehold.it/1024x512',
-                      imageAlt: '',
-                  },
-                  {
-                      title: 'Deuxième slide',
-                      description: 'Description...',
-                      imageSrc: 'https://placehold.it/1024x512',
-                      imageAlt: '',
-                  }
-              ]} />
                 <Well>
                   <h2 className="text-center"> Les 4 principaux principes de la methode Kanban</h2>
                   <Slider slides={[

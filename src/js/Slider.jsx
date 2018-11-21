@@ -21,9 +21,8 @@ class Slider extends PureComponent {
                     slides.map(({ title, description }, idx) => (
                         <Carousel.Item key={idx}>
                             <div style={{height:'300px', display: 'flex', justifyContent:'center', alignItems:'center', flexDirection: 'column'}}>
-                              <h3>{title}</h3>
+                              <h3 style={{ fontWeight:"bold"}}>{title}</h3>
                               <p>{description}</p>
-
                             </div>
                         </Carousel.Item>
                     ))
