@@ -1,5 +1,5 @@
 import React, { PureComponent, Fragment } from 'react';
-import { Jumbotron, Grid, } from 'react-bootstrap';
+import { Jumbotron, Grid, Well } from 'react-bootstrap';
 import Section from './Section';
 import Principes from "./Principe";
 import Header from './Header';
@@ -22,35 +22,49 @@ class App extends PureComponent {
               </Jumbotron>
               <Introduction/>
               <Principes/>
-
               <Fonctionnement/>
-            <Section title="Titre H2" imageAlt="" imageSrc="https://placehold.it/512x512">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad voluptatem praesentium. Perspiciatis, dolores nulla repellat magni, repellendus rerum consequuntur nobis rem labore, tempore aperiam neque illo sapiente eligendi aspernatur!
-            </Section>
-
+              <Slider slides={[
+                  {
+                      title: 'Première slide',
+                      description: 'Description...',
+                      imageSrc: 'https://placehold.it/1024x512',
+                      imageAlt: '',
+                  },
+                  {
+                      title: 'Deuxième slide',
+                      description: 'Description...',
+                      imageSrc: 'https://placehold.it/1024x512',
+                      imageAlt: '',
+                  }
+              ]} />
+                <Well>
+                  <h2 className="text-center"> Les 4 principaux principes de la methode Kanban</h2>
+                  <Slider slides={[
+                      {
+                          title: 'Commencez par ce que vous faites aujourd’hui :',
+                          description: 'La méthode Kanban utilise les processus déjà utilisés et encourage de les améliorer au fur et à mesure.',
+                      },
+                      {
+                          title: 'Accepter d’appliquer des changements progressifs : ',
+                          description: ' L équipe doit accepter d améliorer le système en place par des changements progressif.',
+                      },
+                      {
+                          title: 'Respectez le processus actuel, les rôles, les responsabilités et les titres :',
+                          description: 'Pour faciliter les changement à venir, il faut éliminer la crainte du changement en respectant les rôles, les responsabilité et les titres professionnel de chacun.',
+                      },
+                      {
+                          title: 'Leadership à tous les niveaux :',
+                          description: 'Que ce soit collaborateur ou cadres supérieurs, tous les actes de leadership doivent être encourager.',
+                      }
+                  ]} />
+                </Well>
             <Avantages />
             <Section title="Conclusion de Kanban">
             La méthode Kanban est utilisée en grande majorité dans le secteur de la production industrielle. Avec cette méthodologie, ce sont les commandes des clients qui déclenchent la production… <br />
             Le but étant d'éviter au maximum d'avoir du stock <br />
             Cette approche permet de favoriser la collaboration pour résoudre les problèmes.
-
             </Section>
-        </Grid>
-
-        <Slider slides={[
-            {
-                title: 'Première slide',
-                description: 'Description...',
-                imageSrc: 'https://placehold.it/1024x512',
-                imageAlt: '',
-            },
-            {
-                title: 'Deuxième slide',
-                description: 'Description...',
-                imageSrc: 'https://placehold.it/1024x512',
-                imageAlt: '',
-            }
-        ]} />
+          </Grid>
         <Footer />
       </Fragment>
     );

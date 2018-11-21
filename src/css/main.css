@@ -6,3 +6,10 @@
 p {
   line-height: 1.7;
 }
+
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
