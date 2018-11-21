@@ -6,7 +6,7 @@ class Avantages extends PureComponent {
 
         return (
             <Well>
-              <h2 className="text-center"> <span className="text-success">Avantages</span> / <span className="text-danger">Inconvéniants</span> de Kanban</h2>
+              <h2 className="text-center"> <span className="text-success">Avantages</span> / <span className="text-danger">Inconvéniants </span> de Kanban </h2>
               <Grid fluid>
                 <Row className="show-grid">
                   <Col md={6}>
