@@ -5,16 +5,14 @@ class Footer extends Component {
   render() {
     return (
       <Well style={{marginBottom: '0'}}>
-        <Grid fluid>
-          <Row className="show-grid">
-            <Col xs={6}>
+        <Grid>
+            <Col xs={6} style={{ padding: 0 }}>
               <p>Made by Alexis / Mathias / Adrien / Raphael / Kyllian</p>
             </Col>
-            <Col xs={6}>
+            <Col xs={6} style={{ padding: 0 }}>
               <p className="text-right"><a href="https://www.edenschool.fr/" target="_blank" >EDEN SCHOOL</a></p>
             </Col>
-          </Row>
-        </Grid>
+          </Grid>
       </Well>
     );
   }
