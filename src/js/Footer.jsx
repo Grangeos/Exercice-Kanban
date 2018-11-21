@@ -11,7 +11,7 @@ class Footer extends Component {
               <p>Made by EdenSchool</p>
             </Col>
             <Col xs={6}>
-              <p className="text-right">Fils fe </p>
+              <p className="text-right"><a href="https://www.edenschool.fr/" target="_blank" >EDEN SCHOOL</a></p>
             </Col>
           </Row>
         </Grid>
