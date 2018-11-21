@@ -5,7 +5,7 @@ import imgPrincipe from "../Img/imgPrincipes.jpg";
 class Principes extends PureComponent {
   render() {
     return(
-      <Section title="Principes de Kanban" imageAlt="Tableau Kanban avec une grille to do, doing et done" imageSrc={imgPrincipe}>
+      <Section {...this.props} title="Principes de Kanban" imageAlt="Tableau Kanban avec une grille to do, doing et done" imageSrc={imgPrincipe}>
       Le principe de la méthodologie Kanban est de produire quand il nous ait demandé
       de produire et non comme la méthodologie scrum qui nous demande de produire tant
       qu’il y a matière à produire.

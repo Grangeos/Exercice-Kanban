@@ -3,9 +3,8 @@ import { Grid, Col, Row, Well } from 'react-bootstrap';
 
 class Avantages extends PureComponent {
     render() {
-
         return (
-            <Well>
+            <Well {...this.props}>
               <h2 className="text-center"> <span className="text-success">Avantages</span> / <span className="text-danger">Inconvéniants</span> de Kanban</h2>
               <Grid fluid>
                 <Row className="show-grid">
